@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BuildersTribe Assignment
+
+A Crypto Currency Real Time Price Tracker and DEX Application [Next.js](https://nextjs.org/docs) 
+
+
 
 ## Getting Started
 
-First, run the development server:
+1. Setup the required API keys
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| **API Keys**           | **Description**                                                                                                  | **Code**                                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| walletConnectProjectId | WalletConnect's SDK to help with connecting wallets (create one [here](https://cloud.walletconnect.com/sign-in)) | Add in the `.env` file at `NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID`                                         |
+| 0x                     | 0x API key (create one [here](https://0x.org/docs/introduction/getting-started))                                 | Add in the `.env` file at `NEXT_PUBLIC_ZEROEX_API_KEY`                                                    |
+2. Install project dependencies
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Start the Next.js development server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+```
+open http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Required Functionalities:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Task Description                                                                                                                                                                                                 | Status    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| **Wallet Connection**                                                                                                                                                                                            |           |
+| Construct a UI component leveraging Web3 modal libraries to interface with Ethereum wallets via MetaMask or WalletConnect. This includes auto-detection of wallet presence, secure session establishment, and error management. | ✅ Done    |
+| **Cryptocurrency Price Charting**                                                                                                                                                                                |           |
+| Utilize any suitable charting library to construct interactive charts for displaying cryptocurrency prices.                                                                                                      | ✅ Done    |
+| Fetch historical price data from APIs like CoinGecko or CryptoCompare to initially populate these charts.                                                                                                        | ✅ Done    |
+| Implement filters within the chart to allow users to view price data by day, week, and month, providing flexibility in data analysis and visualization.                                                           | ✅ Done    |
+|**Bonus Task** Implement websocket connections to the selected cryptocurrency data APIs, such as CoinGecko or CryptoCompare. Use these websocket connections for real-time data streaming to dynamically update the charts, reflecting live price changes. | ✅ Done    |
+| **Token Swapping Mechanism**                                                                                                                                                                                     |           |
+| Integrate a decentralized exchange protocol API (such as 0x or Bungee) to enable ERC-20 token swaps directly within the application.                                                                              | ✅ Done    |
+| Execute swap transactions .                                                                                                                           | ✅ Done    |
