@@ -2,6 +2,11 @@
 
 A Crypto Currency Real Time Price Tracker and DEX Application [Next.js](https://nextjs.org/docs) 
 
+# Sample Video of Application
+[Drive Link](https://drive.google.com/file/d/106EmfcuxzAr7lkLfMOtMsofsNtLY-GOx/view?usp=sharing
+)
+
+
 
 
 ## Getting Started
@@ -45,3 +50,9 @@ open http://localhost:3000
 | **Token Swapping Mechanism**                                                                                                                                                                                     |           |
 | Integrate a decentralized exchange protocol API (such as 0x or Bungee) to enable ERC-20 token swaps directly within the application.                                                                              | ✅ Done    |
 | Execute swap transactions .                                                                                                                           | ✅ Done    |
+
+
+# **Sample Images**
+![image](https://github.com/Sanskar-khandelwal/buidl-assignment/assets/93245109/6fc573cd-389f-43e5-9ecc-ab69ea7e271d)
+![image](https://github.com/Sanskar-khandelwal/buidl-assignment/assets/93245109/1bb4a8ca-2dcc-4e3c-8f62-da5044ae2afd)
+![image](https://github.com/Sanskar-khandelwal/buidl-assignment/assets/93245109/dafc7538-8dd2-4a6a-831f-41e8424b8bfd)
